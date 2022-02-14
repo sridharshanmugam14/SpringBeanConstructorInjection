@@ -12,9 +12,7 @@ public class ConstructorInjectionDemo {
 		Resource resource = new ClassPathResource("applicationContext.xml");
 		BeanFactory beanFactory = new XmlBeanFactory(resource);
 		Employee employee = (Employee)beanFactory.getBean("employee");
-		//employee.show();
-		System.out.println(employee.getId());
-		System.out.println(employee.getEmployeeName());
+		employee.show();
 	}
 
 }
